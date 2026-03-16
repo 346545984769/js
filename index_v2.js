@@ -1,7 +1,27 @@
 /* ═══════════════════════════════════════════════════════════════
    about.js
    ═══════════════════════════════════════════════════════════════ */
-(function($){window.buildAboutPost=function(){return $(document.getElementById('about-post-template').innerHTML);};}(jQuery));
+
+(function ($) {
+
+  window.buildAboutPost = function () {
+    return $([
+      "<div class='post'>",
+        "<div class='post-body'>",
+          "<h2 class='post-title'>About Me</h2>",
+          "<hr class='post-divider'/>",
+          "<div class='about-content'>",
+            "<div class='about-text'>",
+              "<p>I'm a graphic and motion designer, as well as a 3D artist. I bring creative ideas to life by combining Adobe Creative Cloud apps with advanced 3D editing tools.</p>",
+              "<p>In addition to my design work, I've experience with web technologies (HTML, CSS &amp; JavaScript), and I'm skilled in operating various signage machinery, including laser cutters, large-format printers, vinyl cutters and 3D printers.</p>",
+            "</div>",
+          "</div>",
+        "</div>",
+      "</div>"
+    ].join(''));
+  };
+
+}(jQuery));
 
 /* ═══════════════════════════════════════════════════════════════
    design.js
